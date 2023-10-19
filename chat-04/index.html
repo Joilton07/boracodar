@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+</head>
+<body>
+    <div id="app">
+        <div id="profile">
+            <div id="user-info">
+                <img src="./Avatar.jpg" alt="Um mulher asiática com cabelos preto com mechas loiras e usando óculos">
+                <div id="user-status">
+                    <h3 id="name">Cecilia Sassaki</h3>
+                    <div class="status">online</div>
+                </div>
+            </div>
+            <button id="close-chat">
+                <i class="ph ph-x"></i>
+            </button>
+        </div>
+        <div id="messages">
+            <h4 class="last-seen">Hoje 11:30</h4>
+            <div class="messages">
+                <section class="message">
+                    <h4 class="top">Cecilia - 11:30</h4>
+                    <p class="body">Tive uma ideia incrível para um projeto! 😍</p>
+                </section>
+                <section class="message you">
+                    <h4 class="top">Você - 11:32</h4>
+                    <p class="body">Sério? Me conta mais. Sério? Me conta mais.</p>
+                </section>
+                <section class="message">
+                    <h4 class="top">Cecilia - 11:34</h4>
+                    <p class="body">E se a gente fizesse um chat moderno e responsivo em apenas uma semana?</p>
+                </section>
+                <section class="message you">
+                    <h4 class="top">Você - 11:36</h4>
+                    <p class="body">#boraCodar! 🚀</p>
+                </section>
+            </div>
+        </div>
+        <div class="write-info">
+            <form class="input-wrapper">
+                <input type="text" placeholder="Digite sua mensagem" />
+                <button>
+                    <i class="ph-paper-plane-right-fill"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script>
+        const messages = document.querySelector(".messages")
+        messages.lastElementChild.scrollIntoView()
+    </script>
+</body>
+</html>
